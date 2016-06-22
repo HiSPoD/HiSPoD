@@ -1,54 +1,37 @@
 function HiSPoD
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% This program is developed for polychromatic x-ray diffraction of 
-% crystalline samples. Major capabilities include:
-% (1) Simulate diffraction pattern of a given material
-% (2) Calculated radially averaged 1D diffraction profile from 2D
-% diffraction data from APS 32-ID-B beamline.
-% (3) Index (hkl) of diffraction data
-% 
-%
-% Data to load:
-% *.tif (series) files, *tiff file or converted *.mat files
-% *.txt file for energy spectrum (first column energy, second colomn flux)
-% *.txt file for absorption (first column energy, second colomn transmission)
-%
-%
-% Basic parameters:
-% (1) Sample-to-detector distance: from sample to detector plane
-% (2) Detector angle: angle between detector plane surface normal and
-% incident beam
-% (3) Pixel size: assuming square pixel shape
-% (4) Scaling factor: data binning factor, used for accelerating analyis 
-% speed
-% (5) Image dimension: pixel numbers of the detector
-% (6) Number of  harmonic peaks: how many harmonic energies users would
-% like to consider when labeling the (hkl) peaks
-% (7) Direct beam X and Y (optional): direct beam position on detector, 
-% could be negative number. If not known, users can use "Find (00)" tool
-% to estimate them.
-% (8) Content in "Sample structure" module: weight of diffraction intensity
-% of each phase in the overall diffraction pattern. This is not the mass or
-% mole content, instead, it's simply a parameter to for data fitting.
-% Without input, the default is 50% for each.
-% (9) Points in "Tools" module: Number of point for scattering vector q in
-% I(q) (and I(tth)) plots.
-% (10) Q res in "Tools" module: half width of q window when performing
-% radially average. The larger the number, the smoother the intensity
-% profile. It should be equal or slightly larger than the half of the
-% difference of adjacent q points.
-%
-%
-% Sample structure information:
-% Users need to input sample crystal structure and reference
-% diffraction information for using "Simulate diffraction" and "Label
-% (hkl)" tools. 
-%
-% 
-% $ Developed by Tao Sun in Jul 2013 $
-% $ Last modified by Tao Sun in Jun 2015 $
-% $ thf_map function was modified on Jul.14, 2015
-% $ Imaging Group, Advanced Photon Source, Argonne National Laboratory $
+% Copyright (c) 2016-2019, UChicago Argonne, LLC. All rights reserved. 
+% Copyright 2016-2019. UChicago Argonne, LLC. This software was produced 
+% under U.S. Government contract DE-AC02-06CH11357 for Argonne National 
+% Laboratory (ANL), which is operated by UChicago Argonne, LLC for the U.S. 
+% Department of Energy. The U.S. Government has rights to use, reproduce, 
+% and distribute this software. NEITHER THE GOVERNMENT NOR UChicago Argonne, 
+% LLC MAKES ANY WARRANTY, EXPRESS OR % IMPLIED, OR ASSUMES ANY LIABILITY FOR 
+% THE USE OF THIS SOFTWARE. If software is modified to produce derivative
+% works, such modified software should be clearly marked, so as not to 
+% confuse it with the version available from ANL. Additionally, 
+% redistribution and use in source and binary forms, with or without 
+% modification, are permitted provided that the following conditions are 
+% met: *Redistributions of source code must retain the above copyright 
+% notice, this list of conditions and the following disclaimer. 
+% *Redistributions in binary form must reproduce the above copyright notice, 
+% this list of conditions and the following disclaimer in the documentation 
+% and/or other materials provided with the distribution. * Neither the name 
+% of UChicago Argonne, LLC, Argonne National Laboratory, ANL, the U.S. 
+% Government, nor the names of its contributors may be used to endorse or 
+% promote products derived from this software without specific prior written 
+% permission. THIS SOFTWARE IS PROVIDED BY UChicago Argonne, LLC AND 
+% CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, 
+% BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS 
+% FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL UChicago 
+% Argonne, LLC OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, 
+% INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT 
+% NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, 
+% DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY 
+% THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT 
+% (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF 
+% THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% User interface module
