@@ -21,9 +21,9 @@ Features
 Contribute
 ----------
 
-* Documentation: https://github.com/decarlof/HiSPoD/tree/master/doc
-* Issue Tracker: https://github.com/decarlof/HiSPoD/docs/issues
-* Source Code: https://github.com/decarlof/HiSPoD/project
+* Documentation: https://github.com/HiSPoD/HiSPoD/tree/master/doc
+* Issue Tracker: https://github.com/HiSPoD/HiSPoD/issues
+* Source Code: https://github.com/HiSPoD/HiSPoD/
 
 Content
 -------
