@@ -1,4 +1,4 @@
-Example 02 
+Example 01 
 ==========
 
 This section contains the example_01 script.
