@@ -36,6 +36,7 @@ extensions = [
     'sphinx.ext.autosummary',
     'sphinx.ext.napoleon',
     'sphinxcontrib.bibtex',
+#    'sphinxcontrib.matlab',
     'sphinx.ext.viewcode']
 
 # Napoleon settings

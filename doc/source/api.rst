@@ -1,14 +1,14 @@
 API reference
 =============
 
-.. rubric:: **project Modules:**
+.. rubric:: **HiSPoD Modules:**
 
 .. toctree::
 
-   api/project.module_01
-   api/project.module_02
+   api/hispod.module_01
+   api/hispod.module_02
 
-.. automodule:: project
+.. automodule:: hispod
    :members:
    :undoc-members:
    :show-inheritance: 

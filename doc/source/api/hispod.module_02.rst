@@ -1,7 +1,7 @@
-:mod:`project.module_01`
-========================
+:mod:`hispod.module_02`
+=======================
 
-.. automodule:: project.module_01
+.. automodule:: hispod.module_02
    :members:
    :show-inheritance:
    :undoc-members:
