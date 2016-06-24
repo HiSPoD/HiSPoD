@@ -2,8 +2,7 @@
 About
 =====
 
-This section describes what the project is about
-`Project <https://github.com/decarlof/project>`_.
+*HiSPoD* is a Matlab® program developed for simulating and analyzing undulator white-beamdiffraction patterns from polycrystalline samples.
 
 .. contents:: Contents:
    :local:
