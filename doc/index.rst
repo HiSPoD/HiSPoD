@@ -2,13 +2,11 @@
 HiSPoD
 ======
 
-`HiSPoD <https://github.com/decarlof/HiSPoD>`_ is developed for polychromatic 
-x-ray diffraction of polycrystalline samples. 
+`HiSPoD <https://github.com/HiSPoD/HiSPoD>`_ is a Matlab® 
+program developed for simulating and analyzing undulator 
+white-beam diffraction patterns from polycrystalline samples.
 
-We kindly request that you cite the following article :cite:`cite:01` 
-if you use HiSPoD.
-
-HiSPoD documentation is at `url <http://hispod.readthedocs.org/>`_.
+We kindly request that you cite :cite:`cite:01` if you use *HiSPoD*.
 
 Features
 --------
