@@ -2,6 +2,10 @@
 HiSPoD
 ======
 
+.. image:: source/manual/figures/hispod-logo.jpg
+   :width: 320px
+   :alt: convnet
+
 `HiSPoD <https://github.com/HiSPoD/HiSPoD>`_ is a Matlab® 
 program developed for simulating and analyzing undulator 
 white-beam diffraction patterns from polycrystalline samples.
