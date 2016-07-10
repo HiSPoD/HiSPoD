@@ -15,15 +15,15 @@ the transmission spot may not fall on the detector, and (3) diffraction
 peaks from multiple x-ray harmonic energies co-exist. The major
 functions of this GUI include:
 
--  Simulate 2D diffraction pattern from a sample under a given experiment condition
-   
--  Analyze 2D diffraction patterns
-    -  Estimate transmission beam position
-    -  Define region of interest (i.e. apply mask)
-    -  Calculate map of reciprocal wavevector q
-    -  Extract 1D intensity profiles I(tth) and I(q) via radially averaging
-    -  Index (hkl) and harmonic peaks
-    
+- Simulate 2D diffraction pattern from a sample under a given experiment condition 
+- Analyze 2D diffraction 
+
+  -  Estimate transmission beam position
+  -  Define region of interest (i.e. apply mask)
+  -  Calculate map of reciprocal wavevector q
+  -  Extract 1D intensity profiles I(tth) and I(q) via radially averaging
+  -  Index (hkl) and harmonic peaks
+
 -  Perform curve fitting to quantify strain and phase content
 
 *HiSPoD* aims at providing users with an effective tool for (1)
